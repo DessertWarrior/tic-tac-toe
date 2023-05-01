@@ -1,0 +1,31 @@
+body{
+   --block: 200px;
+  background-color:cornsilk;
+  display: flex;
+  justify-content: center;
+}
+*::selection{
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+.container {
+  width: calc(var(--block) * 3);
+  display:flex;
+  flex-wrap: wrap;
+}
+.block {
+  height: var(--block);
+  width: var(--block);
+  box-sizing: border-box;
+  font-size: var(--block);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid lightskyblue;
+  background-color: deepskyblue;
+}
+.block:hover {
+  cursor: pointer;
+  background-color: cyan;
+}
